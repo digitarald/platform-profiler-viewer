@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb"],
+  "globals": {
+    "window": true,
+    "document": true,
+    "Blob": true
+  },
+  "rules": {
+    "no-console": [0],
+    "jsx-quotes": [2, "prefer-single"],
+    "no-param-reassign": [0],
+    "guard-for-in": [0],
+    "arrow-body-style": [0],
+    "no-restricted-syntax": [0],
+    "no-unused-vars": [1],
+    "no-loop-func": [0],
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "object-shorthand": [0],
+    "camelcase": [0],
+    "global-require": [0],
+    "react/prefer-stateless-function": [0],
+    "react/jsx-filename-extension": [0],
+    "no-cond-assign": [2, "except-parens"]
+  },
+  "parser": "babel-eslint"
+}

@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+	font-family: sans-serif;
+}
+body {
+	padding: 1em;
+	background-color: #000;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+svg {
+	path {
+	}
+}
+
+.row {
+	display: flex;
+}
+
+.buckets {
+	flex: 1;
+	padding: 1em;
+	list-style: none;
+	.bucket {
+		display: flex;
+		.bucket-label {
+			flex: 1;
+		}
+		.bucket-time {
+			font-weight: bold;
+		}
+	}
+}
+
+.funcs {
+	list-style: none;
+	.func {
+		display: block;
+		white-space: nowrap;
+		&.func-is-empty {
+			color: #bbb;
+		}
+		span {
+			display: inline-block;
+			margin-right: 1em;
+		}
+		.func-indent {
+			white-space: pre;
+		}
+		&.func-is-needle .func-bucket {
+			font-weight: bold;
+		}
+	}
+}
